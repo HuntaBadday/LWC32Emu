@@ -1,3 +1,0 @@
-#!/bin/bash
-
-./lwc32emu /asm/lwc32emu/bin/$1 $2
