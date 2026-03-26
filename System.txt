@@ -1,0 +1,40 @@
+Memory Map:
+
+0000 - 00FF: MPU
+0100 - 01FF: System IO
+0200 - 02FF: Kernel variables
+0300 - 03FF: Serial input buffer
+0400 - 0BFF: Screen Memory
+1000 - 8FFF: System heap
+9000 - 9FFF: System Stack
+A000 - CFFF: Free memory (Used by programs)
+D000 - DFFF: Special programs area
+E000 - FFFF: Kernel ROM
+
+================================
+
+SER0:
+    Write: Print character
+    Read: Read character from keyboard queue
+SER0C (Write/Read):
+    0: Clear input buffer / Data available
+    1: Enable cursor
+    2: Disable cursor
+    
+
+================================
+
+External Flag Set:
+X0: Buffer empty on read
+X1: Buffer has data on read
+
+================================
+
+MPU:
+
+0000        : MPU Bank select
+0001 - 00FF : Corresponds to page 1 to page FF
+
+Data entry (bits):
+0: Can read
+1: Can write

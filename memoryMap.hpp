@@ -1,0 +1,3 @@
+#define SCREEN_MEMORY 0x400
+#define SCREEN_MEMORY_SIZE 0x800
+#define CURSOR 0x240
